@@ -23,10 +23,6 @@ fieldset p{
     background-color: orange;
 }
 
-.boton:disabled{
-    background-color: purple;
-}
-
 .contenedor-botones legend{
     color: gray;
 }

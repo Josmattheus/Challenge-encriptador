@@ -17,19 +17,16 @@
         </div>
     </header>
     <main>
-        <div>
-            <input type="text" id="parrafo-sin-encriptar" class="input-texto" required placeholder="Ingrese el texto aquí">
-        </div>
-
-        <fieldset class="encriptados-box">
-            <p class="texto-encriptado" id="parrafo-encriptado">a</p>
+        <fieldset>
+            <textarea name="parrafo-sin-encriptar" id="parrafo-sin-encriptar" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <textarea name="parrafo-encriptado" id="parrafo-encriptado" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
         </fieldset>
 
         <fieldset class="contenedor-botones">
             <legend>Solo letras minúsculas y sin acentos</legend>
 
-            <button onclick="encriptar();" class="boton" id="boton-encriptar">Encriptar</button>
-            <button onclick="desencriptar();" class="boton" id="boton-desencriptar">Desencriptar</button>
+            <button onclick="procesar('encriptar');" class="boton" id="boton-encriptar">Encriptar</button>
+            <button onclick="procesar('desencriptar');" class="boton" id="boton-desencriptar">Desencriptar</button>
         </fieldset>
     </main>
     <footer>
