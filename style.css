@@ -1,0 +1,32 @@
+body{
+    font-family: "Inter", sans-serif;
+    background-color: white;
+}
+
+.logo-alura{
+    margin: 40px 0 0 40px;
+    position: relative;
+}
+
+.input-texto{
+    font-size: 32px;
+    color: #0A3871;
+}
+
+fieldset p{
+    background-color: gray;
+}
+
+.boton{
+    width: 100%;
+    border: none;
+    background-color: orange;
+}
+
+.boton:disabled{
+    background-color: purple;
+}
+
+.contenedor-botones legend{
+    color: gray;
+}

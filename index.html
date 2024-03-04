@@ -6,17 +6,33 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
 </head>
 
 <body>
     <header>
         <div class="logo-alura">
+            <h1><img src="imagenes/Logo.png" alt="Logo de Alura"></h1>
+        </div>
     </header>
     <main>
+        <div>
+            <input type="text" id="parrafo-sin-encriptar" class="input-texto" required placeholder="Ingrese el texto aquí">
+        </div>
 
+        <fieldset class="encriptados-box">
+            <p class="texto-encriptado" id="parrafo-encriptado">a</p>
+        </fieldset>
+
+        <fieldset class="contenedor-botones">
+            <legend>Solo letras minúsculas y sin acentos</legend>
+
+            <button onclick="encriptar();" class="boton" id="boton-encriptar">Encriptar</button>
+            <button onclick="desencriptar();" class="boton" id="boton-desencriptar">Desencriptar</button>
+        </fieldset>
     </main>
     <footer>
-
     </footer>
 </body>
 </html>
