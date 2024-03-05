@@ -6,6 +6,7 @@
     <title>Encriptador</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="app.js"></script>
     
 </head>
@@ -16,17 +17,28 @@
             <h1><img src="imagenes/Logo.png" alt="Logo de Alura"></h1>
         </div>
     </header>
-    <main>
-        <fieldset>
-            <textarea name="parrafo-sin-encriptar" id="parrafo-sin-encriptar" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-            <textarea name="parrafo-encriptado" id="parrafo-encriptado" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
-        </fieldset>
 
-        <fieldset class="contenedor-botones">
+    <main>
+        <div>
+            <textarea name="parrafo-sin-encriptar" id="parrafo-sin-encriptar" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí" oninput=""></textarea>
+        </div>
+
+        <div class="contenedor-segunda-textbox">
+            <div class="imagen-persona">
+                <img src="imagenes/Muñeco.png" alt="Persona con lupa">
+            </div>
+            <legend class="desc1">Ningún mensaje fue encontrado</legend>
+            <legend class="desc2">Ingresa el texto que desees encriptar o desencriptar.</legend>
+            <textarea name="parrafo-encriptado" id="parrafo-encriptado" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+
+        <fieldset>
             <legend>Solo letras minúsculas y sin acentos</legend>
 
-            <button onclick="procesar('encriptar');" class="boton" id="boton-encriptar">Encriptar</button>
-            <button onclick="procesar('desencriptar');" class="boton" id="boton-desencriptar">Desencriptar</button>
+            <div class="contenedor-botones">
+                <button onclick="procesar('encriptar');" class="boton" id="boton-encriptar">Encriptar</button>
+                <button onclick="procesar('desencriptar');" class="boton" id="boton-desencriptar">Desencriptar</button>
+            </div>
         </fieldset>
     </main>
     <footer>

@@ -1,3 +1,10 @@
+/*desactivar la segunda textbox al inicio porque no hay texto*/
+window.onload = function() {
+    /*dejar de mostrar textbox*/
+    document.getElementById('parrafo-encriptado').style.display = 'none';
+    /*mostrar imagen*/
+}
+
 function procesar(opcion) {
     let textoSinEncriptar = document.getElementById('parrafo-sin-encriptar').value.toLowerCase();
     let textoEncriptado = document.getElementById('parrafo-encriptado').value.toLowerCase();
@@ -67,3 +74,10 @@ function desencriptarLetras(mensaje) {
 
     return resultado;
 }
+/*
+function expandirAreaTexto(id) {
+    const areaTexto = document.getElementById(id);
+    areaTexto.style.height = 'auto'; // Reset the height to auto
+    areaTexto.style.height = `${areaTexto.scrollHeight}px`; // Set the height to the scrollHeight
+}
+*/
