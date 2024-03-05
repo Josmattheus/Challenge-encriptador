@@ -157,6 +157,12 @@ div legend{
     font-weight: 400;
     font-size: 12px;
     line-height: 18px;
+    display: inline;
+}
+
+.vector-imagen{
+    width: 120px;
+    display: inline-block;
 }
 
 .boton-copiar{

@@ -108,29 +108,13 @@ function desencriptarLetras(mensaje) {
 }
 
 function copiarContenido() {
-    // Get the text content of the second textarea
     let contenido = document.getElementById('segundo-textarea').value;
-
-    // Create a temporary textarea element
     let tempTextarea = document.createElement('textarea');
-    
-    // Set the value of the temporary textarea to the content you want to copy
     tempTextarea.value = contenido;
-
-    // Append the temporary textarea to the document
     document.body.appendChild(tempTextarea);
-
-    // Select the text in the temporary textarea
     tempTextarea.select();
-
-    // Copy the selected text to the clipboard
     document.execCommand('copy');
-
-    // Remove the temporary textarea from the document
     document.body.removeChild(tempTextarea);
-
-    // Optionally, provide some user feedback
-    alert('Contenido copiado al portapapeles');
 }
 
 /*
