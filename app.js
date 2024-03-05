@@ -2,29 +2,55 @@
 window.onload = function() {
     /*dejar de mostrar textbox*/
     document.getElementById('segundo-textarea').style.display = 'none';
+    document.getElementById('copiar-btn').style.display = 'none';
     /*mostrar imagen*/
 }
+
+function mostarImagenQuitarTexto(){
+    /*mostrar y dejar de mostrar elementos de la segunda textarea*/
+    document.getElementById('imagen-persona').style.display = 'inline-block';
+    document.getElementById('desc1').style.display = 'inline-block';
+    document.getElementById('desc2').style.display = 'inline-block';
+    document.getElementById('copiar-btn').style.display = 'inline-block';
+    document.getElementById('segundo-textarea').style.display = 'none';
+}
+
+function mostarTextoQuitarImagen(){
+    /*mostrar y dejar de mostrar elementos de la segunda textarea*/
+    document.getElementById('imagen-persona').style.display = 'none';
+    document.getElementById('desc1').style.display = 'none';
+    document.getElementById('desc2').style.display = 'none';
+    document.getElementById('copiar-btn').style.display = 'inline-block';
+    document.getElementById('segundo-textarea').style.display = 'inline-block';
+}
+
 
 function procesar(opcion) {
     let textoSinEncriptar = document.getElementById('primer-textarea').value.toLowerCase();
     let textoEncriptado = document.getElementById('segundo-textarea').value.toLowerCase();
+    mostarTextoQuitarImagen();
 
     if (opcion == 'encriptar'){
         let resultado = encriptarLetras(textoSinEncriptar);
         document.getElementById('segundo-textarea').value = resultado;
-
-        /*mostrar y dejar de mostrar elementos de la segunda textarea*/
-        document.getElementById('imagen-persona').style.display = 'none';
-        document.getElementById('desc1').style.display = 'none';
-        document.getElementById('desc2').style.display = 'none';
-        document.getElementById('segundo-textarea').style.display = 'inline-block';
     }
-    else{
+    else {
         let resultado = desencriptarLetras(textoSinEncriptar);
         document.getElementById('segundo-textarea').value = resultado;
     }
+
+    revisarCambio();
 }
 
+/*
+function revisarCambio(){
+    let textoSinEncriptar = document.getElementById('primer-textarea').value;
+    let textoEncriptado = document.getElementById('segundo-textarea').value;
+    if(textoSinEncriptar == '' || textoEncriptado == ''){
+        mostarImagenQuitarTexto();
+    }
+}
+*/
 
 function encriptarLetras(mensaje) {
     let resultado = '';
@@ -80,6 +106,33 @@ function desencriptarLetras(mensaje) {
 
     return resultado;
 }
+
+function copiarContenido() {
+    // Get the text content of the second textarea
+    let contenido = document.getElementById('segundo-textarea').value;
+
+    // Create a temporary textarea element
+    let tempTextarea = document.createElement('textarea');
+    
+    // Set the value of the temporary textarea to the content you want to copy
+    tempTextarea.value = contenido;
+
+    // Append the temporary textarea to the document
+    document.body.appendChild(tempTextarea);
+
+    // Select the text in the temporary textarea
+    tempTextarea.select();
+
+    // Copy the selected text to the clipboard
+    document.execCommand('copy');
+
+    // Remove the temporary textarea from the document
+    document.body.removeChild(tempTextarea);
+
+    // Optionally, provide some user feedback
+    alert('Contenido copiado al portapapeles');
+}
+
 /*
 function expandirAreaTexto(id) {
     const areaTexto = document.getElementById(id);
