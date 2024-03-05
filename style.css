@@ -11,10 +11,16 @@ body{
 .input-texto{
     font-size: 32px;
     color: #0A3871;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
 }
 
-fieldset p{
-    background-color: gray;
+
+/*ajustar tamanio del textarea dinamicamente*/
+textarea{
+    resize: none;
+    overflow-y: hidden;/* Ocultar barra vertical */
 }
 
 .boton{
