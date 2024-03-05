@@ -1,21 +1,27 @@
 /*desactivar la segunda textbox al inicio porque no hay texto*/
 window.onload = function() {
     /*dejar de mostrar textbox*/
-    document.getElementById('parrafo-encriptado').style.display = 'none';
+    document.getElementById('segundo-textarea').style.display = 'none';
     /*mostrar imagen*/
 }
 
 function procesar(opcion) {
-    let textoSinEncriptar = document.getElementById('parrafo-sin-encriptar').value.toLowerCase();
-    let textoEncriptado = document.getElementById('parrafo-encriptado').value.toLowerCase();
+    let textoSinEncriptar = document.getElementById('primer-textarea').value.toLowerCase();
+    let textoEncriptado = document.getElementById('segundo-textarea').value.toLowerCase();
 
     if (opcion == 'encriptar'){
         let resultado = encriptarLetras(textoSinEncriptar);
-        document.getElementById('parrafo-encriptado').value = resultado;
+        document.getElementById('segundo-textarea').value = resultado;
+
+        /*mostrar y dejar de mostrar elementos de la segunda textarea*/
+        document.getElementById('imagen-persona').style.display = 'none';
+        document.getElementById('desc1').style.display = 'none';
+        document.getElementById('desc2').style.display = 'none';
+        document.getElementById('segundo-textarea').style.display = 'inline-block';
     }
     else{
-        let resultado = desencriptarLetras(textoEncriptado);
-        document.getElementById('parrafo-sin-encriptar').value = resultado;
+        let resultado = desencriptarLetras(textoSinEncriptar);
+        document.getElementById('segundo-textarea').value = resultado;
     }
 }
 
