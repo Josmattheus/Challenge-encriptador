@@ -39,7 +39,7 @@ function procesar(opcion) {
         document.getElementById('segundo-textarea').value = resultado;
     }
 
-    revisarCambio();
+    /*revisarCambio();*/
 }
 
 /*
