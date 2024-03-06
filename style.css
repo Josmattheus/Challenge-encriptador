@@ -208,7 +208,8 @@ footer{
     padding: 0.8rem;
 }
 /*port celular*/
-@media screen and (max-width:480px){
+@media screen and (max-width:480px)
+{
 
     header{
         height: auto;
@@ -297,18 +298,18 @@ footer{
     }
 
     .desc1{
-        margin: 0 0 0 -1rem;
+        margin: 0;
         top: 0;
     }
 
     .desc2{
-        margin: 0 0 0 -1rem;
+        margin: 0 0 0 0rem;
         top: 4rem;
     }
 }
 
 /*port tablet*/
-@media screen and (min-width:760px) and (max-width:1400px){
+@media screen and (min-width:520px) and (max-width:1400px){
     header{
         height: auto;
     }
