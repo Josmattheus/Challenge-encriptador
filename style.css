@@ -223,7 +223,7 @@ footer{
     }
 
     fieldset legend{
-        margin-left: 1rem;
+        margin-left: 1.5rem;
     }
 
     #primer-textarea{
@@ -234,7 +234,7 @@ footer{
     }
 
     #segundo-textarea{
-        padding: 0;
+        padding: 1rem;
         width: 90%;
         height:22rem;
         margin-bottom: 2rem;
@@ -242,7 +242,7 @@ footer{
 
     .contenedor-segunda-textbox{
         position: relative;
-        width:74.5%;
+        width:83%;
         height: calc(22rem + 67px);
         margin: 0 0 0 3.75rem;
 
@@ -252,7 +252,7 @@ footer{
         border-radius: 32px;
     
         border: none;
-        padding: 1rem;    
+        padding: 0;    
     }
 
     .imagen-persona{
@@ -263,8 +263,14 @@ footer{
         text-align: center;
     }
 
+    /*botones*/
+    .contenedor-botones{
+        padding: 0 1.5rem;
+    }
+
     .contenedor-botones button:last-child, .contenedor-botones button:first-child{
-        margin: 1rem 1rem 0 1rem;
+        margin: 1.4rem 0 0 0;
+        width:100%
     }
 
     .boton-copiar{
