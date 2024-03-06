@@ -207,7 +207,7 @@ footer{
 .texto-footer p{
     padding: 0.8rem;
 }
-/*port mobil*/
+/*port celular*/
 @media screen and (max-width:480px){
 
     header{
@@ -297,6 +297,108 @@ footer{
 
     .desc2{
         margin: 0 0 0 -1rem;
+        top: 4rem;
+    }
+}
+
+/*port tablet*/
+@media screen and (min-width:760px) and (max-width:1400px){
+    header{
+        height: auto;
+    }
+
+    .logo-alura{
+        margin: 2rem 2rem 15%;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    fieldset legend{
+        margin-left: 2rem;
+    }
+
+    #primer-textarea{
+        padding: 2rem;
+        width: 91%;
+        height:22rem;
+        position: relative;
+    }
+
+    #segundo-textarea{
+        padding: 0;
+        width: 90%;
+        height:22rem;
+        margin-bottom: 2rem;
+    }
+
+    .contenedor-segunda-textbox{
+        position: relative;
+        width:84%;
+        height: calc(22rem + 67px);
+        margin: 0 0 0 3.75rem;
+
+        display: inline-block;
+        top: 40px;
+        right: 40px;
+        border-radius: 32px;
+    
+        border: none;
+        padding: 2rem;    
+    }
+
+    .contenedor-segunda-textbox:{
+        height: 100px;
+    }
+
+    .imagen-persona{
+        margin: -17%;
+        scale: 0.9;
+        position: relative;
+        top: 20%;
+        text-align: center;
+    }
+
+    .contenedor-botones button:last-child, .contenedor-botones button:first-child{
+        margin: 1rem 2.2rem 0 2rem;
+    }
+
+    .boton-copiar{
+        padding: 16px 24px;
+        width: 90%;
+        height: 67px;
+
+        margin: 1rem;
+        transition: 0.4s;
+        font-family: "Inter", sans-serif;
+    
+        position:relative;
+        top: auto;
+    }
+    
+    .contenedor-segunda-textbox .boton-copiar {
+        position: absolute; /*cambia a posición absoluta solo dentro del contenedor */
+        bottom: 0;
+        left: 0;
+    }
+
+    .imagen-persona {
+        display: none;
+    }
+
+    .desc1{
+        margin: 0 0 0 -1rem;
+        padding-left: 22% ;
+        padding-right: 22% ;
+        top: 0;
+    }
+
+    .desc2{
+        margin: 0 0 0 -1rem;
+        padding-left: 22% ;
+        padding-right: 22% ;
+        padding-top: 0;
         top: 4rem;
     }
 }

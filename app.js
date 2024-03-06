@@ -38,19 +38,7 @@ function procesar(opcion) {
         let resultado = desencriptarLetras(textoSinEncriptar);
         document.getElementById('segundo-textarea').value = resultado;
     }
-
-    /*revisarCambio();*/
 }
-
-/*
-function revisarCambio(){
-    let textoSinEncriptar = document.getElementById('primer-textarea').value;
-    let textoEncriptado = document.getElementById('segundo-textarea').value;
-    if(textoSinEncriptar == '' || textoEncriptado == ''){
-        mostarImagenQuitarTexto();
-    }
-}
-*/
 
 function encriptarLetras(mensaje) {
     let resultado = '';
@@ -116,11 +104,3 @@ function copiarContenido() {
     document.execCommand('copy');
     document.body.removeChild(tempTextarea);
 }
-
-/*
-function expandirAreaTexto(id) {
-    const areaTexto = document.getElementById(id);
-    areaTexto.style.height = 'auto'; // Reset the height to auto
-    areaTexto.style.height = `${areaTexto.scrollHeight}px`; // Set the height to the scrollHeight
-}
-*/
