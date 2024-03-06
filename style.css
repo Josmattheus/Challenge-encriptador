@@ -185,6 +185,29 @@ fieldset legend::before {
     top: 685px;
 }
 
+/*footer*/
+footer{
+    position: relative;
+    top: 4rem;
+    background: url(imagenes/textura_footer.jpg);
+}
+
+.texto-footer{
+    color: white;
+    font-size: 13.5px;
+    font-family: 'Times New Roman', Times, serif;
+    
+    position: relative;
+    display: inline;
+    text-align: center;
+    margin-bottom: 100px;
+    background-size: cover;
+}
+
+.texto-footer p{
+    padding: 0.8rem;
+}
+/*port mobil*/
 @media screen and (max-width:480px){
 
     header{
@@ -219,7 +242,7 @@ fieldset legend::before {
 
     .contenedor-segunda-textbox{
         position: relative;
-        width:80%;
+        width:74.5%;
         height: calc(22rem + 67px);
         margin: 0 0 0 3.75rem;
 
