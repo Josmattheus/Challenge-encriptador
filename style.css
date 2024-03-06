@@ -232,6 +232,14 @@ fieldset legend::before {
         padding: 1rem;    
     }
 
+    .imagen-persona{
+        margin: -17%;
+        scale: 0.9;
+        position: relative;
+        top: 20%;
+        text-align: center;
+    }
+
     .contenedor-botones button:last-child, .contenedor-botones button:first-child{
         margin: 1rem 1rem 0 1rem;
     }
@@ -255,4 +263,17 @@ fieldset legend::before {
         left: 0;
     }
 
+    .imagen-persona {
+        display: none;
+    }
+
+    .desc1{
+        margin: 0 0 0 -1rem;
+        top: 0;
+    }
+
+    .desc2{
+        margin: 0 0 0 -1rem;
+        top: 4rem;
+    }
 }
