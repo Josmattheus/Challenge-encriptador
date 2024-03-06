@@ -6,6 +6,7 @@ window.onload = function() {
     /*mostrar imagen*/
 }
 
+
 function mostarImagenQuitarTexto(){
     /*mostrar y dejar de mostrar elementos de la segunda textarea*/
     document.getElementById('imagen-persona').style.display = 'inline-block';
