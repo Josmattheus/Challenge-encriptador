@@ -23,6 +23,15 @@
             <textarea name="parrafo-sin-encriptar" id="primer-textarea" class="input-texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
         </div>
 
+        <fieldset>
+            <legend>Solo letras minúsculas y sin acentos</legend>
+
+            <div class="contenedor-botones">
+                <button onclick="procesar('encriptar');" class="boton" id="boton-encriptar">Encriptar</button>
+                <button onclick="procesar('desencriptar');" class="boton" id="boton-desencriptar">Desencriptar</button>
+            </div>
+        </fieldset>
+
         <div class="contenedor-segunda-textbox">
             <div class="imagen-persona" id="imagen-persona">
                 <img src="imagenes/Muñeco.png" alt="Persona con lupa">
@@ -34,17 +43,6 @@
             <button onclick="copiarContenido()" class="boton-copiar" id="copiar-btn">Copiar</button>
         </div>
 
-        <fieldset>
-            <div class="vector-imagen">
-                <img src="imagenes/Vector.png" alt="Signo de exclamacion">
-            </div>
-            <legend>Solo letras minúsculas y sin acentos</legend>
-
-            <div class="contenedor-botones">
-                <button onclick="procesar('encriptar');" class="boton" id="boton-encriptar">Encriptar</button>
-                <button onclick="procesar('desencriptar');" class="boton" id="boton-desencriptar">Desencriptar</button>
-            </div>
-        </fieldset>
     </main>
     <footer>
     </footer>
